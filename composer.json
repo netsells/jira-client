@@ -1,0 +1,19 @@
+{
+    "name": "netsells/jira-client",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Jordan",
+            "email": "sam@netsells.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Netsells\\JiraClient\\": "src/"
+        }
+    }
+}
