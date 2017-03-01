@@ -6,5 +6,5 @@ use GuzzleHttp\Client;
 
 interface AuthenticatorInterface
 {
-    public function getClient($baseUrl) : Client;
+    public function getClient($baseUrl);
 }

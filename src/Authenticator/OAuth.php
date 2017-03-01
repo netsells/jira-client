@@ -80,7 +80,7 @@ class OAuth implements AuthenticatorInterface
         }
     }
 
-    public function getClient() : Client
+    public function getClient()
     {
         if (!is_null($this->client)) {
             return $this->client;

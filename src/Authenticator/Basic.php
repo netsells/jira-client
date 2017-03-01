@@ -20,7 +20,7 @@ class Basic implements AuthenticatorInterface
         $this->password = $password;
     }
 
-    public function getClient($baseUrl): Client
+    public function getClient($baseUrl)
     {
         return new Client([
             'base_uri' => $baseUrl,
