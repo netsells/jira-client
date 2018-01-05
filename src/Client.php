@@ -36,6 +36,12 @@ class Client
     {
         return $this->request($method, "rest/api/2/{$url}", $params);
     }
+    
+    public function fetchApi($method, $url, $params = [])
+    {
+        $response = $this->requestApi($method, $url, $params);
+        return json_decode($response->getBody());
+    }
 
     public function send(Request $request)
     {
